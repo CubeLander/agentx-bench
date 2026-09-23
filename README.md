@@ -1,5 +1,7 @@
 # AgentX bench
 
+[中文说明](README.zh-CN.md)
+
 Official AgentX **256k** workload, official replay implementation, two measurement
 durations. This repository only pins, launches and records the benchmark. It does
 not implement another scheduler, mock agent, prompt generator, or scoring suite.
