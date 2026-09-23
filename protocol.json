@@ -1,0 +1,19 @@
+{
+  "methodology_url": "https://inferencex.semianalysis.com/agentx/methodology",
+  "methodology_checked_utc": "2026-09-23",
+  "harness_repository": "https://github.com/SemiAnalysisAI/agentx-harness",
+  "harness_commit": "56a0cf70f4c0359454ee4bd15a17770b541a3e3e",
+  "dataset": "semianalysisai/cc-traces-weka-062126-256k",
+  "dataset_revision": "8fecd2fc56694469f758f0afbbb6335ad3043740",
+  "dataset_alias": "semianalysis_cc_traces_weka_062126_256k",
+  "dataset_sessions": 393,
+  "scenario": "inferencex-agentx-mvp",
+  "seed": 20260923,
+  "trajectory_start_min_ratio": 0.25,
+  "trajectory_start_max_ratio": 0.75,
+  "warmup_requests_per_lane": 10,
+  "profiles": {
+    "formal": {"measurement_seconds": 3600},
+    "smoke": {"measurement_seconds": 900}
+  }
+}

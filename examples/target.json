@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:8000",
+  "model": "REPLACE_WITH_SERVED_MODEL_NAME",
+  "model_revision": "REPLACE_WITH_IMMUTABLE_WEIGHTS_REVISION",
+  "tokenizer": "/absolute/path/to/frozen/tokenizer",
+  "tokenizer_revision": "REPLACE_WITH_IMMUTABLE_TOKENIZER_REVISION",
+  "engine": {
+    "name": "REPLACE_WITH_ENGINE",
+    "revision": "REPLACE_WITH_COMMIT",
+    "launch_command_without_secrets": "REPLACE_WITH_SERVER_COMMAND"
+  },
+  "hardware": {
+    "accelerator": "REPLACE_WITH_DEVICE_TYPE",
+    "device_count": 1,
+    "allocated_host_dram_gib": 0
+  },
+  "max_model_len": 262144,
+  "host_kv_budget_gib": 0,
+  "speculative_decoding": {"enabled": false}
+}

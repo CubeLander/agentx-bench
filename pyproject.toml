@@ -1,0 +1,17 @@
+[project]
+name = "agentx-bench"
+version = "0.1.0"
+description = "Pinned official AgentX 256k replay with formal and smoke profiles"
+requires-python = ">=3.11,<3.14"
+dependencies = ["aiperf", "httpx[socks]"]
+
+[tool.uv.sources]
+aiperf = { git = "https://github.com/SemiAnalysisAI/agentx-harness.git", rev = "56a0cf70f4c0359454ee4bd15a17770b541a3e3e" }
+
+[dependency-groups]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["integration: CPU-only official client against a local streaming mock"]
